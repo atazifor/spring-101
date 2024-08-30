@@ -1,10 +1,7 @@
 package main;
 
-import org.springframework.stereotype.Component;
-
 import javax.annotation.PostConstruct;
 
-@Component //add instance of this class to spring context
 public class Parrot {
     private String name;
 
