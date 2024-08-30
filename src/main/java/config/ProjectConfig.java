@@ -14,9 +14,9 @@ public class ProjectConfig {
     }
 
     @Bean
-    Parrot  parrot2() {
+    Parrot  parrot2() { //bean name
         var p = new Parrot();
-        p.setName("Miki");
+        p.setName("Miki"); //parrot name
         return p;
     }
 
