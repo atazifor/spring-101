@@ -9,7 +9,7 @@ public class Main {
         //instruct application context instance to use configuration class
         ApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
         //parrot is now part of context
-        Parrot p = context.getBean("miki", Parrot.class);
+        Parrot p = context.getBean(Parrot.class);
         System.out.println("p.getName() = " + p.getName());
 
         String s = context.getBean(String.class);

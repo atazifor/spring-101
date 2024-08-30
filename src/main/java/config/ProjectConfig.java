@@ -3,6 +3,7 @@ package config;
 import main.Parrot;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class ProjectConfig {
@@ -14,6 +15,7 @@ public class ProjectConfig {
     }
 
     @Bean("miki")
+    @Primary
     Parrot  parrot2() { //bean name
         var p = new Parrot();
         p.setName("Miki"); //parrot name
