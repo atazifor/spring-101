@@ -11,5 +11,11 @@ public class Main {
         //parrot is now part of context
         Parrot p = context.getBean(Parrot.class);
         System.out.println("p.getName() = " + p.getName());
+
+        String s = context.getBean(String.class);
+        System.out.println("string = " + s);
+
+        Integer n = context.getBean(Integer.class);
+        System.out.println("n = " + n);
     }
 }
